@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DJ Alessandro — Artist biography, manifesto, and the Chicken DJ mini game." />
+  <title>About — DJ Alessandro</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================
+       NAVBAR
+       ======================================== -->
+  <header class="navbar" role="banner">
+    <a href="index.html" class="navbar-brand">DJ Alessandro</a>
+
+    <nav class="navbar-nav" role="navigation" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="discography.html">Discography</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile overlay nav -->
+  <nav class="navbar-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="discography.html">Discography</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main>
+    <!-- ========================================
+         PAGE HEADER
+         ======================================== -->
+    <div class="page-header">
+      <div class="container">
+        <p class="section-label fade-in">Artist Identity</p>
+        <h1 class="section-title fade-in delay-1" style="font-size:clamp(2rem,6vw,3.5rem); margin-top:var(--space-sm);">
+          About
+        </h1>
+        <p class="fade-in delay-2" style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); margin-top:var(--space-sm); letter-spacing:0.1em;">
+          Underground Electronic &mdash; Tokyo-03 Network &mdash; Since 2022
+        </p>
+      </div>
+    </div>
+
+    <!-- ========================================
+         MINI GAME — CHICKEN DJ
+         ======================================== -->
+    <section class="game-section" aria-label="Mini game">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-label">Interactive Module</p>
+          <h2 class="section-title">Chicken DJ</h2>
+        </div>
+
+        <div class="game-container fade-in delay-1">
+          <!-- Game header bar -->
+          <div class="game-header">
+            <span class="game-title-bar">
+              <span class="status-dot" style="margin-right:0.5rem;"></span>
+              CHICKEN_DJ.exe &mdash; v1.0.3
+            </span>
+            <span class="game-score-display">
+              SCORE <span id="gameScore">00000</span>
+            </span>
+          </div>
+
+          <!-- Canvas game area -->
+          <canvas
+            id="gameCanvas"
+            aria-label="Chicken DJ mini game — press Space to jump"
+            role="img"
+          ></canvas>
+
+          <!-- Instructions bar -->
+          <div class="game-instructions">
+            Space / Tap &mdash; Jump over musical notes &mdash; Don't die
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="divider"></div>
+    </div>
+
+    <!-- ========================================
+         TWO-COLUMN LAYOUT: TIMELINE + MANIFESTO
+         ======================================== -->
+    <section class="section" aria-label="Timeline and manifesto">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- LEFT: TIMELINE -->
+          <div>
+            <div class="section-header fade-in-left">
+              <p class="section-label">Chronological Signal</p>
+              <h2 class="section-title">Timeline</h2>
+            </div>
+
+            <div class="timeline" role="list">
+
+              <!-- 2022 -->
+              <div class="timeline-item fade-in-left" role="listitem">
+                <p class="timeline-year">2022</p>
+                <h3 class="timeline-event">First Bedroom Mixes</h3>
+                <p class="timeline-desc">
+                  A secondhand mixer, two borrowed decks, and a room small enough
+                  that the walls vibrated. The first recordings were made at night,
+                  when the building fell quiet. Nobody heard them. That was fine.
+                </p>
+              </div>
+
+              <!-- 2023 -->
+              <div class="timeline-item fade-in-left delay-1" role="listitem">
+                <p class="timeline-year">2023</p>
+                <h3 class="timeline-event">Analog Experiments</h3>
+                <p class="timeline-desc">
+                  Discovery of analog synthesis — the warm distortion of a 303 clone,
+                  the unstable pitch of a defective oscillator. The machines were broken
+                  in ways that couldn't be replicated digitally. Those imperfections
+                  became the sound.
+                </p>
+              </div>
+
+              <!-- 2024 -->
+              <div class="timeline-item fade-in-left delay-2" role="listitem">
+                <p class="timeline-year">2024</p>
+                <h3 class="timeline-event">Blue Archive Sessions</h3>
+                <p class="timeline-desc">
+                  Three nights inside an abandoned recording facility on the city's
+                  periphery. No clocks, no phones, no daylight. The results were
+                  archived and released six months later. People noticed.
+                </p>
+              </div>
+
+              <!-- 2025 -->
+              <div class="timeline-item fade-in-left delay-3" role="listitem">
+                <p class="timeline-year">2025</p>
+                <h3 class="timeline-event">Underground Live Transmission</h3>
+                <p class="timeline-desc">
+                  First live performances in small basement venues &mdash; spaces that
+                  held sixty people maximum and had no stage. Just a table, a system,
+                  and a crowd that stood very still. The recordings from that year
+                  became the <em style="color:var(--blue); font-style:normal;">Underground Transmission</em> live document.
+                </p>
+              </div>
+
+              <!-- 2026 -->
+              <div class="timeline-item fade-in-left delay-4" role="listitem">
+                <p class="timeline-year">2026</p>
+                <h3 class="timeline-event">Static Memory Protocol</h3>
+                <p class="timeline-desc">
+                  The current album. Eight tracks of deliberate restraint &mdash;
+                  music that breathes through its own silences. Recorded during a
+                  winter of voluntary isolation. A transmission that is still ongoing.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- RIGHT: MANIFESTO -->
+          <div>
+            <div class="section-header fade-in">
+              <p class="section-label">Artist Statement</p>
+              <h2 class="section-title">Manifesto</h2>
+            </div>
+
+            <div class="manifesto">
+
+              <p class="manifesto-text fade-in delay-1">
+                Electronic music did not begin in clubs. It began in bedrooms —
+                in the <em>friction between a machine and the person operating it</em>,
+                in the accidental beauty of a patch cable in the wrong socket,
+                in the hiss of a cassette that had been recorded over too many times.
+                That is where DJ Alessandro's music comes from: the accident.
+                The error that turns out to be the song.
+              </p>
+
+              <blockquote class="manifesto-quote fade-in delay-2">
+                "The machine doesn't know what it means to be lonely.
+                So I taught it. Now it plays that loneliness back to me
+                and I have to decide if it's mine or its own."
+              </blockquote>
+
+              <p class="manifesto-text fade-in delay-3">
+                The influence of <strong>Japanese retro-futurism</strong> runs through
+                every record — not as aesthetic borrowing, but as a structural philosophy.
+                The idea that technology and emotion are not opposites. That a synthesizer
+                can grieve. That a drum machine can be patient. That the space between
+                notes is as important as the notes themselves.
+              </p>
+
+              <p class="manifesto-text fade-in delay-4">
+                <em>Blue Archive Sessions</em> was about the city at 3AM.
+                <em>Analog Nostalgia</em> was about the machines we loved before we
+                understood them. <em>Static Memory Protocol</em> is about
+                <strong>what remains when everything else is filtered away</strong> —
+                the signal underneath the noise, the frequency that doesn't resolve.
+              </p>
+
+              <p class="manifesto-text fade-in delay-5">
+                This is not background music. It is not ambient. It is not designed
+                to disappear. It is designed to <em>transmit</em>. Whether anyone
+                receives it is, ultimately, not the point. The transmission is its
+                own reason for existing.
+              </p>
+
+              <!-- Terminal-style sign-off -->
+              <div class="fade-in" style="
+                margin-top: var(--space-lg);
+                padding: var(--space-md);
+                background: var(--glass);
+                border: 1px solid var(--glass-border);
+                border-radius: var(--radius);
+                font-family: var(--font-mono);
+                font-size: 0.7rem;
+                color: var(--text-muted);
+                letter-spacing: 0.1em;
+              ">
+                <p style="color:var(--green); margin-bottom:0.5rem;">
+                  &gt; SIGNAL ORIGIN: TOKYO-03 NETWORK
+                </p>
+                <p style="margin-bottom:0.25rem;">&gt; ARTIST: DJ_ALESSANDRO</p>
+                <p style="margin-bottom:0.25rem;">&gt; STATUS: TRANSMITTING<span class="blink">_</span></p>
+                <p style="margin-bottom:0.25rem;">&gt; FREQUENCY: UNDERGROUND</p>
+                <p>&gt; ARCHIVE: OPEN &mdash; <a href="discography.html" style="color:var(--blue);">ACCESS CATALOG</a></p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-brand">DJ Alessandro</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="discography.html">Discography</a>
+        <a href="about.html">About</a>
+      </nav>
+      <p class="footer-text">
+        &copy; 2026 DJ Alessandro &mdash; Tokyo-03 Signal Network
+      </p>
+    </div>
+  </footer>
+
+  <script src="data/discography.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

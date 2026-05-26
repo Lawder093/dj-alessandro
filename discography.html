@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DJ Alessandro — Full release catalog. Albums, singles, EPs, mixes, and live recordings." />
+  <title>Discography — DJ Alessandro</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================
+       NAVBAR
+       ======================================== -->
+  <header class="navbar" role="banner">
+    <a href="index.html" class="navbar-brand">DJ Alessandro</a>
+
+    <nav class="navbar-nav" role="navigation" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="discography.html">Discography</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile overlay nav -->
+  <nav class="navbar-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="discography.html">Discography</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <!-- ========================================
+       PAGE HEADER
+       ======================================== -->
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <p class="section-label fade-in">Release Archive</p>
+        <h1 class="section-title fade-in delay-1" style="font-size:clamp(2rem,6vw,3.5rem); margin-top:var(--space-sm);">
+          Discography
+        </h1>
+        <p class="fade-in delay-2" style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); margin-top:var(--space-sm); letter-spacing:0.1em;">
+          15 transmissions &mdash; 2022 &ndash; 2026
+        </p>
+      </div>
+    </div>
+
+    <!-- ========================================
+         FILTER TABS
+         ======================================== -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="filter-tabs fade-in" role="group" aria-label="Filter releases">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="album">Albums</button>
+          <button class="filter-btn" data-filter="ep">EPs</button>
+          <button class="filter-btn" data-filter="single">Singles</button>
+          <button class="filter-btn" data-filter="mix">Mixes</button>
+          <button class="filter-btn" data-filter="live">Live</button>
+        </div>
+
+        <!-- ========================================
+             DISCOGRAPHY GRID
+             Populated dynamically by app.js + discography.js
+             ======================================== -->
+        <div
+          class="discography-grid"
+          id="discographyGrid"
+          role="list"
+          aria-label="Release catalog"
+        >
+          <!-- Cards injected by JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================
+       MODAL (release detail)
+       ======================================== -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="modal-img-placeholder cover-1">
+        <div class="cover-glow" data-initial=""></div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalTitle">Release</h2>
+          <button class="modal-close" aria-label="Close modal">✕</button>
+        </div>
+        <div class="modal-tags">
+          <span class="modal-tag modal-tag-type">single</span>
+          <span class="modal-tag modal-tag-year">2025</span>
+        </div>
+        <p class="modal-desc">Description.</p>
+        <div class="modal-actions">
+          <a href="#" class="btn btn-spotify" target="_blank" rel="noopener">▶ Spotify</a>
+          <a href="#" class="btn btn-youtube" target="_blank" rel="noopener">▶ YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-brand">DJ Alessandro</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="discography.html">Discography</a>
+        <a href="about.html">About</a>
+      </nav>
+      <p class="footer-text">
+        &copy; 2026 DJ Alessandro &mdash; Tokyo-03 Signal Network
+      </p>
+    </div>
+  </footer>
+
+  <script src="data/discography.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

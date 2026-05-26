@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DJ Alessandro — Transmissions from Tokyo-03. Electronic music, analog experiments, cybernetic atmospheres." />
+  <title>DJ Alessandro — Transmissions from Tokyo-03</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================
+       NAVBAR
+       ======================================== -->
+  <header class="navbar" role="banner">
+    <a href="index.html" class="navbar-brand">DJ Alessandro</a>
+
+    <nav class="navbar-nav" role="navigation" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="discography.html">Discography</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile overlay nav -->
+  <nav class="navbar-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="discography.html">Discography</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <!-- ========================================
+       HERO SECTION
+       ======================================== -->
+  <main>
+    <section class="hero" aria-label="Hero">
+
+      <div class="hero-content">
+        <!-- Logo -->
+        <div class="hero-logo-wrap fade-in">
+          <!-- Fallback if logo.png is missing: show text mark -->
+          <img
+            src="assets/logo.png"
+            alt="DJ Alessandro"
+            class="hero-logo"
+            onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='block';"
+          />
+          <div id="logoFallback" style="display:none; font-family:'Orbitron',monospace; font-size:3rem; font-weight:900; color:var(--blue); letter-spacing:0.1em; text-shadow: 0 0 40px var(--blue-glow);">
+            DJ∅
+          </div>
+        </div>
+
+        <!-- Artist name -->
+        <h1 class="hero-name fade-in delay-1">
+          DJ <span>Alessandro</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-subtitle fade-in delay-2">
+          Transmissions from Tokyo-03
+        </p>
+
+        <!-- CTA -->
+        <a href="discography.html" class="hero-cta fade-in delay-3">
+          <span>Enter Archive</span>
+        </a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         FEATURED RELEASES CAROUSEL
+         ======================================== -->
+    <section class="carousel-section section-sm" aria-label="Featured releases">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-label">Featured Transmissions</p>
+          <h2 class="section-title">Recent Releases</h2>
+        </div>
+      </div>
+
+      <!-- Full-width carousel (no container constraint) -->
+      <div class="carousel-track-wrapper">
+        <div class="carousel-track" id="carouselTrack" role="list">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         STATUS / IDENTITY STRIP
+         ======================================== -->
+    <section class="section-sm" aria-label="Artist identity">
+      <div class="container">
+        <div class="divider" aria-hidden="true"></div>
+
+        <div class="flex-between fade-in" style="flex-wrap:wrap; gap:var(--space-md); padding: var(--space-md) 0;">
+          <div>
+            <p class="section-label">Signal Status</p>
+            <p style="font-family:var(--font-mono); font-size:0.7rem; color:var(--text-dim); display:flex; align-items:center; gap:0.5rem; margin-top:0.5rem;">
+              <span class="status-dot"></span>
+              LIVE &mdash; Underground Electronic &mdash; Tokyo-03 Network
+            </p>
+          </div>
+
+          <div style="display:flex; gap:var(--space-lg);">
+            <div>
+              <div style="font-family:var(--font-display); font-size:1.75rem; font-weight:900; color:var(--blue);">15</div>
+              <div style="font-family:var(--font-mono); font-size:0.6rem; letter-spacing:0.2em; color:var(--text-muted); text-transform:uppercase;">Releases</div>
+            </div>
+            <div>
+              <div style="font-family:var(--font-display); font-size:1.75rem; font-weight:900; color:var(--green);">4</div>
+              <div style="font-family:var(--font-mono); font-size:0.6rem; letter-spacing:0.2em; color:var(--text-muted); text-transform:uppercase;">Years</div>
+            </div>
+            <div>
+              <div style="font-family:var(--font-display); font-size:1.75rem; font-weight:900; color:var(--text);">∞</div>
+              <div style="font-family:var(--font-mono); font-size:0.6rem; letter-spacing:0.2em; color:var(--text-muted); text-transform:uppercase;">Signals</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         TEASER — ABOUT
+         ======================================== -->
+    <section class="section" aria-label="About teaser">
+      <div class="container">
+        <div style="max-width:640px; margin:0 auto; text-align:center;">
+          <p class="section-label fade-in" style="justify-content:center;">
+            Signal Origin
+          </p>
+          <h2 class="section-title fade-in delay-1" style="margin-bottom:var(--space-md);">
+            Electronic music is not entertainment.<br/>
+            <span style="color:var(--blue);">It is transmission.</span>
+          </h2>
+          <p class="fade-in delay-2" style="font-family:var(--font-body); font-size:0.95rem; color:var(--text-dim); line-height:2; margin-bottom:var(--space-md);">
+            Born in bedroom studios, refined through underground electronics,
+            and transmitted to anyone willing to listen. DJ Alessandro creates
+            music for empty cities, late-night terminals, and the space between
+            frequencies.
+          </p>
+          <a href="about.html" class="hero-cta fade-in delay-3">
+            <span>Read Manifesto</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================
+       MODAL (shared, used on all pages)
+       ======================================== -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="modal-img-placeholder cover-1">
+        <div class="cover-glow" data-initial=""></div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalTitle">Release</h2>
+          <button class="modal-close" aria-label="Close modal">✕</button>
+        </div>
+        <div class="modal-tags">
+          <span class="modal-tag modal-tag-type">single</span>
+          <span class="modal-tag modal-tag-year">2025</span>
+        </div>
+        <p class="modal-desc">Description here.</p>
+        <div class="modal-actions">
+          <a href="#" class="btn btn-spotify" target="_blank" rel="noopener">
+            ▶ Spotify
+          </a>
+          <a href="#" class="btn btn-youtube" target="_blank" rel="noopener">
+            ▶ YouTube
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-brand">DJ Alessandro</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="discography.html">Discography</a>
+        <a href="about.html">About</a>
+      </nav>
+      <p class="footer-text">
+        &copy; 2026 DJ Alessandro &mdash; Tokyo-03 Signal Network &mdash; All transmissions reserved
+      </p>
+    </div>
+  </footer>
+
+  <!-- Data + scripts -->
+  <script src="data/discography.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
